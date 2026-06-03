@@ -4,6 +4,11 @@ updates:
   directory: "/"
   exclude-paths:
       - "requirements.txt"
+  ignore:
+      - dependency-name: "setuptools"
+      - dependency-name: "vulture"
+      - dependency-name: "bandit"
+      - dependency-name: "pydocstyle"
   schedule:
     interval: daily
     time: "01:30"
@@ -11,3 +16,4 @@ updates:
   target-branch: main
   assignees:
       - "sepandhaghighi"
+  
